@@ -11,12 +11,6 @@ pipeline {
 
     stages {
         
-        stage('install') {
-            steps {
-                install()
-            }
-        }
-    
         stage('build') {
             steps {
                 buld()
@@ -29,7 +23,7 @@ pipeline {
         }
     
     
-        stage('deploy') {
+        stage('push') {
            steps{
                 deploy()
         }
